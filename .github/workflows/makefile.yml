@@ -43,7 +43,7 @@ jobs:
     - name: 下载内核源码
       run: |
         cd $GITHUB_WORKSPACE/kernel_workspace
-        git clone https://github.com/wu17481748/kernel_xiaomi_alioth-miui android-kernel
+        git clone https://github.com/wu17481748/kernel_xiaomi_alioth-miui --depth 1 android-kernel
         cd android-kernel
 
 
